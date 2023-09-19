@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import io from 'socket.io-client';
 import './App.css';
 
-const BACKEND_URL = 'http://localhost:<PORT>' // Replace <PORT> with the port your front-end client is running on
+const BACKEND_URL = 'http://localhost:3003' // Replace with PORT of the back-end server
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
       // Handle incoming messages from custom socket event "socket_data"
       socketRef.current.on("socket_data", data => {
         console.log(data);
-        setprogress(data.progress);
+        setprogress(data);
       });
 
       socketRef.current.on("connect_error", (err) => {
