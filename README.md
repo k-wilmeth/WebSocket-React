@@ -5,3 +5,5 @@ The pair project that goes along with this is [WebSocket-Node](https://github.co
 
 The socket code is in [`App.js`](./src/App.js)
 
+## How To Run
+ - `npm i && nvm use && npm start`

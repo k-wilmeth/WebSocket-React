@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import io from 'socket.io-client';
 import './App.css';
 
-const BACKEND_URL = 'http://localhost:3003' // Replace with PORT of the back-end server
+const BACKEND_URL = 'http://localhost:768' // Replace with PORT of the back-end server
 
 function App() {
 
